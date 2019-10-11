@@ -36,5 +36,6 @@ public class MyCircle {
                 ((y - otherCircle.getY()) + (y - otherCircle.getY())));
         double sum = radius + otherCircle.getRadius();
         return sum > distance;
+
     }
 }
