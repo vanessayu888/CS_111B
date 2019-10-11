@@ -32,11 +32,9 @@ public class MyCircle {
     }
 
     public boolean doesOverlap(MyCircle otherCircle) {
-        double distance = Math.sqrt(((x - otherCircle.getX()) + (x - otherCircle.getX())) +
-                ((y - otherCircle.getY()) + (y - otherCircle.getY())));
+        double distance = Math.sqrt(((x - otherCircle.getX()) * (x - otherCircle.getX())) +
+                ((y - otherCircle.getY()) * (y - otherCircle.getY())));
         double sum = radius + otherCircle.getRadius();
         return sum > distance;
-
-
     }
 }

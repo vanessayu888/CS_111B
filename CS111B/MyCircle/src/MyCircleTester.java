@@ -16,9 +16,17 @@ public class MyCircleTester {
 
         circle3.setX(100.0);
         circle3.setY(100.0);
-        circle3.setY(1.0);
+        circle3.setRadius(1.0);
         System.out.println(circle3.getArea());
 
-
+        if (circle1.doesOverlap(circle2)) {
+            System.out.println("circle1 and circle2 overlap");
+        }
+        if (circle2.doesOverlap(circle3)) {
+            System.out.println("circle2 and circle3 overlap");
+        }
+        if (circle1.doesOverlap(circle3)) {
+            System.out.println("circle1 and circle3 overlap");
+        }
     }
 }
